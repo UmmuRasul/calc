@@ -33,9 +33,42 @@ function getNumber(num) {
             break;
     }
 }
+
+//get the mathemaical operation
+function getOperand(operand) {
+    var input_var = document.getElementById('input');
+    switch (operand) {
+        case '+':
+            input_var.value += '+';
+            break;
+        case '-':
+            input_var.value += '-';
+            break;
+        case 'x':
+            input_var.value += '*';
+            break;
+        case '/':
+            input_var.value += '/';
+            break;
+        case '+/-':
+            input_var.value += '-' + input_var.valu;
+            break;
+    }
+}
+
 //clear the screen
 
 function clearScreen() {
     document.getElementById('input').value = "";
     document.getElementById('answer').value = "";
+}
+
+//backspace func
+function backspace() {
+    var input_var = document.getElementById('input');
+    var x = input_var.value;
+    if (x.length > 0) {
+        x = x.substring(0, x.length - 1); // remove the last character in input
+        input_var.value = x;
+    }
 }
