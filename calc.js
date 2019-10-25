@@ -44,7 +44,7 @@ function getOperand(operand) {
         case '-':
             input_var.value += '-';
             break;
-        case 'x':
+        case '*':
             input_var.value += '*';
             break;
         case '/':
