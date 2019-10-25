@@ -28,6 +28,14 @@ function getNumber(num) {
         case 9:
             input_var.value += '9';
             break;
+        case 0:
+            input_var.value += '0';
+            break;
     }
+}
+//clear the screen
 
+function clearScreen() {
+    document.getElementById('input').value = "";
+    document.getElementById('answer').value = "";
 }
