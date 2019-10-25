@@ -90,4 +90,3 @@ function backspace() {
             i = 0;
         }
     }
-}
