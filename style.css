@@ -29,3 +29,16 @@ table {
   box-shadow: 2px 2px 2px black;
   color: #1e1e1e;
 }
+input[type="button"] {
+  height: 60px;
+  width: 60px;
+  font-size: 130%;
+  color: blue;
+  background: white;
+  margin: 1px;
+  border-radius: 8px;
+  border: none;
+}
+input[type="button"]:hover {
+  background: #ccbbcc;
+}
